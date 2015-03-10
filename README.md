@@ -40,3 +40,11 @@ Super minimal PHP framework combining ideas from Symfony 1 + WordPress
 - I use the dBug class that is made based on the ColdFusion debugger. It's fantastic. You can call it like this `dbug($obj)` and it will display nicely what you have there.
 - As an added bonus in the dbug function it checks to make sure $is_local is true so that debugging outputs won't display on your live site.
 -   `$is_local` is set in `lib/application` and is defaulted to any HTTP HOST with `.dev`
+
+# Auto Paging
+- There is a variable `$page` that always gets handed to the actions and views that contains there current page number. It scans the url for `page` like: `/videos/page/7` and returns nicely $page = 7 for you. 
+- It doesn't have to be the third uri element it will grab whatever element comes after the `/page/` element.
+
+# Admin sections
+- At the moment nothing is currently baked in. This framework is meant to give you the basics and then you can incorporate whatever else you need. Hopefully one day a plugin system could be attached and the admin could be added as a plugin.
+- Check out `$secure_modules` in `lib/modules` and the function `is_user_logged_in()` to work with securing specfic modules.
