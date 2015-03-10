@@ -43,7 +43,7 @@ if( $id ) $body_class[] = "id-$id";
 
 
 // CHECK SECURE
-if( in_array($module, (array) $secure) AND !is_user_logged_in()) redirect("/" . $login_module);
+if( in_array($module, (array) $secure_modules) AND !is_user_logged_in()) redirect("/" . $login_module);
 
 
 // GLOBAL ACTIONS

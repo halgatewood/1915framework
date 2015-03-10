@@ -7,7 +7,7 @@ $templates = array();
 
 
 // THESE MODULES REQUIRE USER TO BE LOGGED IN
-$secure = array( 'admin' );
+$secure_modules = array( 'admin' );
 
 
 // CUSTOM INDEX FALLBACKS
