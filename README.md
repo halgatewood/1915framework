@@ -48,3 +48,11 @@ Super minimal PHP framework combining ideas from Symfony 1 + WordPress
 # Admin sections
 - At the moment nothing is currently baked in. This framework is meant to give you the basics and then you can incorporate whatever else you need. Hopefully one day a plugin system could be attached and the admin could be added as a plugin.
 - Check out `$secure_modules` in `lib/modules` and the function `is_user_logged_in()` to work with securing specfic modules.
+
+# Database Usage
+- The mysql classes used is similar to many array of objects style mysql classes. 
+- It requires manual queries like the good old days. Some examples:
+-   `$users = $db->get_results("SELECT * FROM users WHERE logged_in = 1");`
+-   `$post = $db->get_row("SELECT * FROM posts WHERE id = $id");`
+-   `$post_id = $db->query_to_id("INSERT INTO posts (title, content) VALUES ('This is a Test', 'Sure Is')");`
+-   `$last_name = $db->get_var("SELECT last_name FROM users WHERE user_id = 234");`
