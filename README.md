@@ -15,7 +15,7 @@ Super minimal PHP framework combining ideas from Symfony 1 + WordPress
 - `$fof_text` = (string) 404 Text if module or action is not found
 
 # URL Structure
-- The main website urls look like this: `website.com/$module/$action/$id/$uri[4]/$url[5]/etc...`
+- The main website urls look like this: `website.com/$module/$action/$id/$uri[4]/$uri[5]/etc...`
 - $module will dive in the `modules/$module folder` and then look for an $action file with the naming convention `a.$action.php`
 - The view used will look for `v.$action.php`
 - I have shortened the variables from the original symfony structure because after you get confortable with the system, the filenames are less important. Lots of systems overcomplicate to help new users which just adds bloat IMO.
