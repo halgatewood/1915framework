@@ -24,7 +24,7 @@ Super minimal PHP framework combining ideas from Symfony 1 + WordPress
 - The main $template is naturally 'main'. You can specify different templates on a per module basis. Like:
 -   `$templates['home']    = "home"`;
 -   `$templates['login']   = "login"`;
-- Ajax calls automaticall use the 'blank' template
+- Ajax calls automatically use the 'blank' template
 - The $secure_modules array contains all the modules that need to be secured.
 - The $index_fallbacks variable allows you to set fallback options on a per module basis
 -   `$index_fallbacks['home'] = false`;
