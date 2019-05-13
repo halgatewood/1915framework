@@ -1,1 +1,1 @@
-<?php echo $view?>
+<?php echo $view; ?>
