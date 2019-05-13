@@ -30,7 +30,7 @@ Super minimal PHP framework combining ideas from Symfony 1 + WordPress
 -   `$index_fallbacks['home'] = false`;
 
 # Global
-- There is a global.php file that gets called before we dive into action files. This is the place to add custom needs with if or switch statements. You can create whatever kind of convention you need.
+- There is a `global.php` file that gets called before we go into action files. This is the place to add custom logic with if or switch statements. You can create whatever kind of convention you need.
 
 # SCSS
 - This base was designed with SCSS and CodeKit in mind. There is a scss folder in the root with an _hg.scss and main.scss.
@@ -42,7 +42,7 @@ Super minimal PHP framework combining ideas from Symfony 1 + WordPress
 -   `$is_local` is set in `lib/application` and is defaulted to any HTTP HOST with `.test`
 
 # Auto Paging
-- There is a variable `$page` that always gets handed to the actions and views that contains there current page number. It scans the url for `page` like: `/videos/page/7` and returns nicely $page = 7 for you. 
+- There is a variable `$page` that always gets handed to the actions and views. It contains the current page number. It scans the url for `page` like: `/videos/page/7` and returns nicely $page = 7 for you. 
 - It doesn't have to be the third uri element it will grab whatever element comes after the `/page/` element.
 
 # Admin sections
